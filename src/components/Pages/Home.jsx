@@ -189,7 +189,7 @@ export default function Home() {
           },
           {
             title: 'Location',
-            subTitle: 'New York, US',
+            subTitle: 'Pune, India',
             iconUrl: '/images/icons/pin.svg',
           },
         ]}

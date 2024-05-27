@@ -197,7 +197,7 @@ export default function Home() {
         btnUrl="/appointments"
       />
       {/* Start Feature Section */}
-      <Section
+      {/* <Section
         topMd={185}
         topLg={140}
         topXl={100}
@@ -206,10 +206,10 @@ export default function Home() {
         bottomXl={100}
       >
         <FeaturesSection sectionTitle="Our Values" data={featureListData} />
-      </Section>
+      </Section> */}
       {/* End Feature Section */}
       {/* Start About Section */}
-      <Section>
+      {/* <Section>
         <AboutSection
           imgUrl="/images/home_1/about.png"
           spiningImgUrl="/images/home_1/about_mini.svg"
@@ -224,25 +224,25 @@ export default function Home() {
             },
           ]}
         />
-      </Section>
+      </Section> */}
       {/* End About Section */}
       {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={110}>
+      {/* <Section topMd={185} topLg={150} topXl={110}>
         <DepartmentSection
           sectionTitle="Departments"
           bgUrl="images/home_1/department_bg.svg"
           data={departmentData}
         />
-      </Section>
+      </Section> */}
 
       {/* End Departments Section */}
       {/* Start Award Section */}
-      <Section topMd={185} topLg={140} topXl={100}>
+      {/* <Section topMd={185} topLg={140} topXl={100}>
         <AwardSection sectionTitle="Departments" data={awardData} />
-      </Section>
+      </Section> */}
       {/* End Award Section */}
       {/* Start Testimonial */}
-      <Section
+      {/* <Section
         topMd={185}
         topLg={140}
         topXl={100}
@@ -254,47 +254,47 @@ export default function Home() {
           sectionTitle="Some Reviews"
           sectionTitleDown="Of our clients"
         />
-      </Section>
+      </Section> */}
       {/* End Testimonial */}
       {/* Start Banner Section */}
-      <Section>
+      {/* <Section>
         <Banner
           bgUrl="images/home_1/cta_bg.svg"
           imgUrl="images/home_1/cta_img.png"
           title="Don’t Let Your Health Take a Backseat!"
           subTitle="Schedule an appointment with one of our experienced medical professionals today!"
         />
-      </Section>
+      </Section> */}
       {/* End Banner Section */}
       {/* Start Blog Section */}
-      <Section topMd={190} topLg={145} topXl={105}>
+      {/* <Section topMd={190} topLg={145} topXl={105}>
         <BlogSection
           sectionTitle="Latest Update"
           sectionTitleUp="BLOG POSTS"
           data={blogData}
         />
-      </Section>
+      </Section> */}
       {/* End Blog Section */}
       {/* Start Appointment Section */}
-      <Section topMd={190} topLg={145} topXl={105} id="appointment">
+      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
           imgUrl="/images/home_1/appointment.jpeg"
         />
-      </Section>
+      </Section> */}
       {/* End Appointment Section */}
       {/* Start FAQ Section */}
-      <Section topMd={190} topLg={145} topXl={105}>
+      {/* <Section topMd={190} topLg={145} topXl={105}>
         <FaqSection
           data={faqData}
           sectionTitle="Usually Asked"
           sectionTitleUp="What People"
         />
-      </Section>
+      </Section> */}
       {/* End FAQ Section */}
       {/* Start Brand Section */}
-      <Section
+      {/* <Section
         topMd={200}
         topLg={150}
         topXl={110}
@@ -303,7 +303,7 @@ export default function Home() {
         bottomXl={110}
       >
         <BrandsSection data={brandData} />
-      </Section>
+      </Section> */}
       {/* End Brand Section */}
     </>
   );

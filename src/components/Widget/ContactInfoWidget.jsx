@@ -8,7 +8,7 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        123 Anywhere St., Any City 12345
+        Pune, IN
       </li>
       <li>
         <i className="cs_accent_bg">
@@ -20,7 +20,7 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="bi:envelope" />
         </i>
-        hellocallcenter@gmail.com
+        email@gmail.com
       </li>
     </ul>
   );

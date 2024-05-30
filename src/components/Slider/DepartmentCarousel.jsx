@@ -82,7 +82,8 @@ export default function DepartmentCarousel({ data }) {
         {data?.map((item, index) => (
           <div key={index}>
             <Link
-              to={item.href}
+              // to={item.href}
+              to = '#'
               className="cs_department cs_shadow_1 cs_radius_20 cs_white_bg"
             >
               <>

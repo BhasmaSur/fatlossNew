@@ -9,7 +9,7 @@ export default function AppointmentForm() {
     <form action="#" className="row">
       <div className="col-lg-6">
         <label className="cs_input_label cs_heading_color">Name</label>
-        <input type="text" className="cs_form_field" placeholder="David John" />
+        <input type="text" className="cs_form_field" placeholder="Prateek Dubey" />
         <div className="cs_height_42 cs_height_xl_25" />
       </div>
       <div className="col-lg-6">
@@ -17,7 +17,7 @@ export default function AppointmentForm() {
         <input
           type="text"
           className="cs_form_field"
-          placeholder="(123) 456 - 789"
+          placeholder="9898989898"
         />
         <div className="cs_height_42 cs_height_xl_25" />
       </div>

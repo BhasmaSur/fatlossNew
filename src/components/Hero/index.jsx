@@ -22,8 +22,12 @@ export default function Hero({
       >
         <div className="container">
           <div className="cs_hero_text">
-            <h1 className="cs_hero_title cs_fs_94">{parse(title)}</h1>
-            <p className="cs_hero_subtitle cs_fs_20 cs_heading_color">
+            <h1 className="cs_hero_title cs_fs_94" style = {{
+              "color": "#0984e3"
+            }}>{parse(title)}</h1>
+            <p className="cs_hero_subtitle cs_fs_20 cs_heading_color"  style = {{
+              "color": "#0984e3"
+            }}>
               {parse(subTitle)}
             </p>
             <div className="cs_hero_btn_wrap">

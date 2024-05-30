@@ -36,18 +36,18 @@ export default function Header({ logoSrc, variant }) {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <Link className="cs_site_branding" to="/">
+                {/* <Link className="cs_site_branding" to="/">
                   <img src={logoSrc} alt="Logo" />
-                </Link>
+                </Link> */}
                 <nav className="cs_nav">
                   <ul
                     className={`${
                       mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
                     }`}
                   >
-                    <li className="menu-item-has-children">
+                    <li>
                       <Link to="/">Home</Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link to="/">Home Version-1</Link>
@@ -65,18 +65,18 @@ export default function Header({ logoSrc, variant }) {
                             <Link to="/home-v5">Home Version-5</Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/">About</Link>
                     </li>
                     <li>
-                      <Link to="/doctors">Find Doctor</Link>
+                      <Link to="/">Find Doctor</Link>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
+                      <Link to="/">Blog</Link>
                     </li>
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <Link to="/">Pages</Link>
                       <DropDown>
                         <ul>
@@ -110,9 +110,9 @@ export default function Header({ logoSrc, variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
+                    </li> */}
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/">Contact</Link>
                     </li>
                   </ul>
                   <span
@@ -129,7 +129,7 @@ export default function Header({ logoSrc, variant }) {
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_toolbox">
-                  <button
+                  {/* <button
                     className="cs_toolbox_btn cs_search_toggle_btn"
                     type="button"
                     onClick={() => setSearchToggle(!searchToggle)}
@@ -146,7 +146,7 @@ export default function Header({ logoSrc, variant }) {
                         fill="currentColor"
                       />
                     </svg>
-                  </button>
+                  </button> */}
                   <button
                     className="cs_toolbox_btn cs_sidebar_toggle_btn"
                     type="button"
@@ -193,7 +193,7 @@ export default function Header({ logoSrc, variant }) {
             <img src="/images/icons/close.svg" alt="Close" />
           </button>
           <div className="cs_logo_box">
-            <img src="/images/logo.svg" alt="Logo" />
+            {/* <img src="/images/logo.svg" alt="Logo" /> */}
             <div className="cs_height_15" />
             <h3 className="cs_fs_24 cs_semibold mb-0">
               Your Partner in Health and Wellness
@@ -204,19 +204,19 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
             title="Phone"
-            subTitle="123-456-7890"
+            subTitle="9898989898"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Email"
-            subTitle="hellocallcenter@gmail.com"
+            subTitle="contactmail@gmail.com"
             iconSrc="/images/contact/icon_2.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
+            subTitle="XYZ block, Pune"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />

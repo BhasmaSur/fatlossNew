@@ -5,16 +5,16 @@ import SocialWidget from '../Widget/SocialWidget';
 import Newsletter from '../Widget/Newsletter';
 import TextWidget from '../Widget/TextWidget';
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
+  { title: 'About Us', href: '/' },
+  { title: 'Departments', href: '/' },
+  { title: 'Doctors', href: '/' },
+  { title: 'Timetable', href: '/' },
+  { title: 'Appointment', href: '/' },
   { title: 'Testimonials', href: '/' },
 ];
 const menuDataTwo = [
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/contact' },
+  { title: 'Blog', href: '/' },
+  { title: 'Contact Us', href: '/' },
   { title: 'FAQs', href: '/' },
   { title: 'Privacy Policy', href: '/' },
   { title: 'Terms and Conditions', href: '/' },
@@ -36,7 +36,7 @@ export default function Footer() {
             alt="Logo Icon"
             className="cs_footer_brand_icon"
           />
-          <h2 className="cs_footer_brand_text">ProHealth</h2>
+          <h2 className="cs_footer_brand_text">Name</h2>
         </div>
       </div>
       <div className="cs_footer_main">
@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <TextWidget text="ProHealth Medical & <br />Healthcare Center" />
+                <TextWidget text="Medical & <br />Healthcare Center" />
                 <ContactInfoWidget />
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
           <div className="cs_footer_bottom_in">
             <SocialWidget />
             <div className="cs_copyright">
-              Copyright © 2024 Pro Health. All rights reserved.
+              Copyright © 2024 Name. All rights reserved.
             </div>
           </div>
         </div>

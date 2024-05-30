@@ -12,37 +12,39 @@ import FaqSection from '../Section/FaqSection';
 import AwardSection from '../Section/AwardSection';
 import DepartmentSection from '../Section/DepartmentSection';
 import { pageTitle } from '../../helpers/PageTitle';
+
 const featureListData = [
   {
     iconSrc: '/images/home_1/compassion.svg',
     title: 'Compassion',
     subTitle:
-      'We understand that seeking medical care can be a stressful and emotional experience, and we strive to create a welcoming and supportive environment that puts our patients at ease and every one.',
+      'We create a welcoming and supportive environment that puts our patients at ease.',
   },
   {
     iconSrc: '/images/home_1/excellence.svg',
     title: 'Excellence',
     subTitle:
-      'We are committed to providing excellent medical care and services to our patients. We believe in continuously improving our skills, knowledge, and resources to ensure that we deliver the highest quality care possible.',
+      'We provide excellent medical care and continuously improve our skills and resources.',
   },
   {
     iconSrc: '/images/home_1/integrity.svg',
     title: 'Integrity',
-    subTitle: `We believe in practicing medicine with integrity and honesty. We are transparent in our communication and decision-making processes, and we always put our patient's interests first & provide best solution.`,
+    subTitle: `We practice medicine with integrity and transparency, always putting our patient's interests first.`,
   },
   {
     iconSrc: '/images/home_1/respect.svg',
     title: 'Respect',
     subTitle:
-      'We treat all individuals with respect and dignity, regardless of their background, beliefs, or circumstances. We believe that every person deserves to be treated with compassion and kindness.',
+      'We treat all individuals with respect and dignity, regardless of their background.',
   },
   {
     iconSrc: '/images/home_1/teamwork.svg',
     title: 'Teamwork',
     subTitle:
-      'We believe in working collaboratively with our team membersvand other healthcare professionals to provide comprehensive and effective care to our patients.',
+      'We work collaboratively with our team members and other healthcare professionals.',
   },
 ];
+
 const brandData = [
   { imgUrl: 'images/brand_1.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_2.png', imgAlt: 'Brand' },
@@ -53,33 +55,35 @@ const brandData = [
   { imgUrl: 'images/brand_7.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_8.png', imgAlt: 'Brand' },
 ];
+
 const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: 'What is the Reverse Lifestyle Disease Program?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Our program focuses on reversing lifestyle diseases like obesity, diabetes, and hypertension through supervised, clinic-based treatments.',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: 'How do I join the program?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'You can join our program by filling up appointment form on our website or contacting our clinic directly for more information.',
   },
   {
-    title: 'Do you accept insurance?',
+    title: 'What should I expect during the program?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Expect comprehensive medical care, personalized treatment plans, and continuous support from our expert team.',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: 'Do you offer online consultations?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Yes, we offer online consultations for initial assessments and follow-up appointments.',
   },
   {
-    title: 'How do I request a prescription refill?',
+    title: 'What is the duration of the program?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'The duration of the program varies depending on individual needs and treatment plans.',
   },
 ];
+
 const blogData = [
   {
     title: 'The Benefits of Mindfulness Meditation for Stress and Anxiety',
@@ -106,60 +110,62 @@ const blogData = [
     socialShare: true,
   },
 ];
+
 const awardData = [
   {
     title: 'Malcolm Baldrige National Quality Award',
     subTitle:
-      'This award recognizes healthcare organizations that have demonstrated excellence in leadership, strategic planning, customer and employee satisfaction, and operational efficiency.',
+      'Recognizes healthcare organizations that have demonstrated excellence in leadership, strategic planning, customer and employee satisfaction, and operational efficiency.',
     iconUrl: 'images/icons/award.svg',
   },
   {
     title: 'HIMSS Davies Award',
     subTitle:
-      'This award recognizes healthcare organizations that have used health information technology to improve patient outcomes and reduce costs.',
+      'Recognizes healthcare organizations that have used health information technology to improve patient outcomes and reduce costs.',
     iconUrl: 'images/icons/award.svg',
   },
   {
     title: 'Healthgrades National’s Best Hospital',
     subTitle:
-      'This recognition is given to hospitals that have achieved high ratings for clinical quality and patient safety across multiple specialties and procedures.',
+      'Given to hospitals that have achieved high ratings for clinical quality and patient safety across multiple specialties and procedures.',
     iconUrl: 'images/icons/award.svg',
   },
   {
     title: 'Joint Commission Gold Seal of Approval',
     subTitle:
-      'This recognition is given to hospitals that have met rigorous standards for patient safety and quality of care.',
+      'Given to hospitals that have met rigorous standards for patient safety and quality of care.',
     iconUrl: 'images/icons/award.svg',
   },
 ];
+
 const departmentData = [
   {
-    title: 'Emergency Department',
+    title: 'Nutrition and Dietetics',
     iconUrl: 'images/home_1/department_icon_1.svg',
     href: '/departments/department-details',
   },
   {
-    title: 'Pediatric Departement',
+    title: 'Cardiology',
     iconUrl: 'images/home_1/department_icon_2.svg',
     href: '/departments/department-details',
   },
   {
-    title: 'Gynecology Department',
+    title: 'Endocrinology',
     iconUrl: 'images/home_1/department_icon_3.svg',
     href: '/departments/department-details',
   },
   {
-    title: 'Cardiology Department',
+    title: 'Primary Care',
     iconUrl: 'images/home_1/department_icon_4.svg',
     href: '/departments/department-details',
   },
   {
-    title: 'Neurology Department',
+    title: 'Physical Therapy',
     iconUrl: 'images/home_1/department_icon_5.svg',
     href: '/departments/department-details',
   },
   {
-    title: 'Psychiatry Department',
+    title: 'Psychiatry and Counseling',
     iconUrl: 'images/home_1/department_icon_6.svg',
     href: '/departments/department-details',
   },
@@ -170,34 +176,34 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Your Partner in Health and Wellness"
-        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier."
+        title="Reverse Lifestyle Diseases"
+        subTitle="Expert Programs for Obesity, Diabetes, and Hypertension"
         bgUrl="/images/home_1/hero_bg.jpeg"
-        imgUrl="/images/newImages/doctor.png"
+        imgUrl="/images/home_1/hero_img.png"
         videoBtnText="See how we work"
-        videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
+        videoUrl="https://youtube.com/embed/1EyazelYoWw?si=bxcZbLzGm6K5gvqt"
         infoList={[
           {
             title: 'Hotline',
-            subTitle: '123-456-7890',
+            subTitle: '9898989898',
             iconUrl: '/images/contact/icon_1.svg',
           },
           {
             title: 'Ambulance',
-            subTitle: '876-256-876',
+            subTitle: '876256876',
             iconUrl: '/images/icons/ambulance.svg',
           },
           {
             title: 'Location',
-            subTitle: 'Pune, India',
+            subTitle: 'Pune, IN',
             iconUrl: '/images/icons/pin.svg',
           },
         ]}
         btnText="Book Now"
-        btnUrl="/appointments"
+        btnUrl="/"
       />
       {/* Start Feature Section */}
-      {/* <Section
+      <Section
         topMd={185}
         topLg={140}
         topXl={100}
@@ -206,43 +212,43 @@ export default function Home() {
         bottomXl={100}
       >
         <FeaturesSection sectionTitle="Our Values" data={featureListData} />
-      </Section> */}
+      </Section>
       {/* End Feature Section */}
       {/* Start About Section */}
-      {/* <Section>
+      <Section>
         <AboutSection
-          imgUrl="/images/home_1/about.png"
+          imgUrl="/images/home_1/about.jpg"
           spiningImgUrl="/images/home_1/about_mini.svg"
           title="About Us"
-          subTitle="PRO HEALTH"
+          subTitle="SCIENTIFIC REVERSAL PROGRAM"
           featureList={[
             {
               featureListTitle:
-                'ProHealth is a team of experienced medical professionals',
+                'Our team of experienced medical professionals',
               featureListSubTitle:
-                'Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms.',
+                'We are dedicated to providing top-quality healthcare services focused on reversing lifestyle diseases through a holistic approach.',
             },
           ]}
         />
-      </Section> */}
+      </Section>
       {/* End About Section */}
       {/* Start Departments Section */}
-      {/* <Section topMd={185} topLg={150} topXl={110}>
+      <Section topMd={185} topLg={150} topXl={110}>
         <DepartmentSection
           sectionTitle="Departments"
           bgUrl="images/home_1/department_bg.svg"
           data={departmentData}
         />
-      </Section> */}
+      </Section>
 
       {/* End Departments Section */}
       {/* Start Award Section */}
       {/* <Section topMd={185} topLg={140} topXl={100}>
-        <AwardSection sectionTitle="Departments" data={awardData} />
+        <AwardSection sectionTitle="Our Achievements" data={awardData} />
       </Section> */}
       {/* End Award Section */}
       {/* Start Testimonial */}
-      {/* <Section
+      <Section
         topMd={185}
         topLg={140}
         topXl={100}
@@ -251,47 +257,47 @@ export default function Home() {
         bottomXl={110}
       >
         <TestimonialSection
-          sectionTitle="Some Reviews"
-          sectionTitleDown="Of our clients"
+          sectionTitle="Testimonials"
+          sectionTitleDown="What Our Clients Say"
         />
-      </Section> */}
+      </Section>
       {/* End Testimonial */}
       {/* Start Banner Section */}
-      {/* <Section>
+      <Section>
         <Banner
           bgUrl="images/home_1/cta_bg.svg"
-          imgUrl="images/home_1/cta_img.png"
-          title="Don’t Let Your Health Take a Backseat!"
+          imgUrl="images/home_1/cta_img.jpg"
+          title="Don't Let Your Health Take a Backseat!"
           subTitle="Schedule an appointment with one of our experienced medical professionals today!"
         />
-      </Section> */}
+      </Section>
       {/* End Banner Section */}
       {/* Start Blog Section */}
       {/* <Section topMd={190} topLg={145} topXl={105}>
         <BlogSection
-          sectionTitle="Latest Update"
+          sectionTitle="Latest Updates"
           sectionTitleUp="BLOG POSTS"
           data={blogData}
         />
       </Section> */}
       {/* End Blog Section */}
       {/* Start Appointment Section */}
-      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
+      <Section topMd={190} topLg={145} topXl={105} id="appointment">
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
-          imgUrl="/images/home_1/appointment.jpeg"
+          imgUrl="/images/home_1/appointment.jpg"
         />
-      </Section> */}
+      </Section>
       {/* End Appointment Section */}
       {/* Start FAQ Section */}
-      {/* <Section topMd={190} topLg={145} topXl={105}>
+      <Section topMd={190} topLg={145} topXl={105}>
         <FaqSection
           data={faqData}
-          sectionTitle="Usually Asked"
-          sectionTitleUp="What People"
+          sectionTitle="Frequently Asked Questions"
+          sectionTitleUp="FAQs"
         />
-      </Section> */}
+      </Section>
       {/* End FAQ Section */}
       {/* Start Brand Section */}
       {/* <Section

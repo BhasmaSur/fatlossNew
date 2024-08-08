@@ -30,12 +30,14 @@ export default function Hero({
             }}>
               {parse(subTitle)}
             </p>
-            <div className="cs_hero_btn_wrap">
-              <VideoModal
-                videoUrl={videoUrl}
-                videoBtnText={videoBtnText}
-                variant="cs_heading_color"
-              />
+            <div className="cs_hero_info_col">
+              <Link to={btnUrl} className="cs_btn cs_style_1">
+                <span>{btnText}</span>
+                <i>
+                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                </i>
+              </Link>
             </div>
           </div>
           <img src={imgUrl} alt="Hero" className="cs_hero_img" />
@@ -57,15 +59,6 @@ export default function Hero({
                 </div>
               </div>
             ))}
-            <div className="cs_hero_info_col">
-              <Link to={btnUrl} className="cs_btn cs_style_1">
-                <span>{btnText}</span>
-                <i>
-                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
-                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
-                </i>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

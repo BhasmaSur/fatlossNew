@@ -8,13 +8,13 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        Pune, IN
+        S.No.46, Vartak Pride, D.P Road, Karvenagar, Pune 411004
       </li>
       <li>
         <i className="cs_accent_bg">
           <Icon icon="fluent:call-24-regular" />
         </i>
-        123-456-7890
+        9422334422
       </li>
       <li>
         <i className="cs_accent_bg">

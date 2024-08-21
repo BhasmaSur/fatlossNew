@@ -10,7 +10,7 @@ export default function TeamSection({ sectionTitle, sectionTitleUp, data }) {
       <Spacing md="72" lg="50" />
       <div className="row gy-3">
         {data?.map((item, index) => (
-          <div className="col-lg-4" key={index}>
+          <div className="col-lg-3" key={index}>
             <Team {...item} />
           </div>
         ))}

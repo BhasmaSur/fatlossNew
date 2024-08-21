@@ -1,42 +1,49 @@
-import React from 'react';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
-import MenuWidget from '../Widget/MenuWidget';
-import SocialWidget from '../Widget/SocialWidget';
-import Newsletter from '../Widget/Newsletter';
-import TextWidget from '../Widget/TextWidget';
+import React from "react";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
+import MenuWidget from "../Widget/MenuWidget";
+import SocialWidget from "../Widget/SocialWidget";
+import Newsletter from "../Widget/Newsletter";
+import TextWidget from "../Widget/TextWidget";
 const menuDataOne = [
-  { title: 'About Us', href: '/' },
-  { title: 'Departments', href: '/' },
-  { title: 'Doctors', href: '/' },
-  { title: 'Timetable', href: '/' },
-  { title: 'Appointment', href: '/' },
-  { title: 'Testimonials', href: '/' },
+  { title: "Home", href: "/" },
+  { title: "About Us", href: "/" },
+  // { title: 'Departments', href: '/' },
+  { title: "Our Team", href: "/" },
+  { title: "Testimonials", href: "/" },
+  { title: "Contact us", href: "/" },
+  // { title: 'Testimonials', href: '/' },
 ];
 const menuDataTwo = [
-  { title: 'Blog', href: '/' },
-  { title: 'Contact Us', href: '/' },
-  { title: 'FAQs', href: '/' },
-  { title: 'Privacy Policy', href: '/' },
-  { title: 'Terms and Conditions', href: '/' },
+  // { title: 'Blog', href: '/' },
+  // { title: 'Contact Us', href: '/' },
+  // { title: 'FAQs', href: '/' },
+  // { title: 'Privacy Policy', href: '/' },
+  // { title: 'Terms and Conditions', href: '/' },
 ];
 
-export default function Footer() {
+export default function Footer({
+  scrollToSection,
+  contactSection
+}) {
   return (
-    <footer className="cs_footer cs_style_1 cs_heading_color">
+    <footer
+      ref={contactSection}
+      className="cs_footer cs_style_1 cs_heading_color"
+    >
       <div
         className="cs_footer_logo_wrap"
-        style={{ backgroundImage: 'url(/images/footer_bg_1.svg)' }}
+        style={{ backgroundImage: "url(/images/footer_bg_1.svg)" }}
       >
         <div
           className="cs_footer_brand"
-          style={{ backgroundImage: 'url(/images/footer_logo_bg.svg)' }}
+          style={{ backgroundImage: "url(/images/footer_logo_bg.svg)" }}
         >
           <img
             src="/images/logo_icon.svg"
             alt="Logo Icon"
             className="cs_footer_brand_icon"
           />
-          <h2 className="cs_footer_brand_text">Name</h2>
+          <h2 className="cs_footer_brand_text">SRP</h2>
         </div>
       </div>
       <div className="cs_footer_main">
@@ -50,7 +57,10 @@ export default function Footer() {
             </div>
             <div className="col-lg-2">
               <div className="cs_footer_item">
-                <MenuWidget data={menuDataOne} />
+                <MenuWidget
+                  scrollToSection={scrollToSection}
+                  data={menuDataOne}
+                />
               </div>
             </div>
             <div className="col-lg-2">
@@ -60,10 +70,11 @@ export default function Footer() {
             </div>
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <Newsletter
+                {/* <Newsletter
                   title="Be Our Subscribers"
                   subTitle="To get the latest news about health from our experts"
-                />
+                /> */}
+                <img src="/images/sli.png" />
               </div>
             </div>
           </div>
@@ -74,7 +85,7 @@ export default function Footer() {
           <div className="cs_footer_bottom_in">
             <SocialWidget />
             <div className="cs_copyright">
-              Copyright © 2024 Name. All rights reserved.
+              Copyright © 2024 SRP. All rights reserved.
             </div>
           </div>
         </div>

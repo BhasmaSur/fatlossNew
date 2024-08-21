@@ -12,7 +12,59 @@ import FaqSection from "../Section/FaqSection";
 import AwardSection from "../Section/AwardSection";
 import DepartmentSection from "../Section/DepartmentSection";
 import { pageTitle } from "../../helpers/PageTitle";
+import Team from "../Team";
+import TeamSection from "../Section/TeamSection";
 
+const teamData = [
+  {
+    imgUrl: "images/image.png",
+    name: "Dr. Suresh Shinde",
+    designation: "Physician & Diabetologist",
+    description:
+      "Over 45 Years of Clinical Medical Practice. Studied Glucose and Insulin Kinetics in over 2500 patients. Visionary Founder of Aloha’s Intensive Reversal Program. Awards for Diabetes Research in National and International Conferences",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+  {
+    imgUrl: "images/doctor_2.jpeg",
+    name: "Dr. Rituparna Shinde",
+    designation: "Interventional Cardiologist",
+    description:
+      "15 Years of Clinical Practice in Preventive & Interventional Cardiology. Founder of Aloha Lifestyle Reversal Studio. Published International Research Papers, Innovator in Conceptualisation",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+  {
+    imgUrl: "images/doctor_3.png",
+    name: "Dr. Kartiki Gole",
+    designation: "Dietician & Nutrition Consultant",
+    description:
+      "BSc in Home Science, MSc in Nutritional Science and Diebetes. Specialized in crafting personalised nutrition plans. Dedicated to promoting healthy lifestyle choices.",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+  {
+    imgUrl: "images/doctor_4.png",
+    name: "Dr. Suchitra Bhangale",
+    designation: "Senior Clinical Researcher",
+    description:
+      "Senior Clinical Researcher with 22 Clinical Trials Experience. Certified from John's Hopkins University, Expert in Protocol Designing. Proficient in Computer Data Management, NABH and Clinical Research Audits Specialist",
+    social: [
+      { icon: "fa6-brands:facebook-f", href: "/about" },
+      { icon: "fa6-brands:linkedin-in", href: "/about" },
+      { icon: "fa6-brands:twitter", href: "/about" },
+    ],
+  },
+];
 const featureListData = [
   {
     iconSrc: "/images/home_1/compassion.svg",
@@ -103,7 +155,7 @@ const faqData = [
   {
     title: "How do I join the program?",
     content:
-      "You can join our program by filling up appointment form on our website or contacting our clinic directly for more information.",
+      "You can join our program by contacting us on our mobile : 9422334422.",
   },
   {
     title: "What should I expect during the program?",
@@ -176,7 +228,12 @@ const awardData = [
   },
 ];
 
-export default function Home() {
+export default function Home({
+  testimonialSection,
+  aboutSection,
+  menuSection,
+  teamSection,
+}) {
   pageTitle("Home");
   return (
     <>
@@ -206,9 +263,11 @@ export default function Home() {
         ]}
         btnText="Book Now"
         btnUrl="/"
+        selectedSection={menuSection}
       />
+
       {/* Start About Section */}
-      <Section>
+      <Section selectedSection={aboutSection}>
         <AboutSection
           imgUrl="/images/home_1/about.jpg"
           spiningImgUrl="/images/home_1/about_mini.svg"
@@ -254,6 +313,20 @@ export default function Home() {
         />
       </Section>
       {/* End Feature Section */}
+      {/* Start Team Section */}
+      <Section
+        selectedSection={teamSection}
+        topMd={190}
+        topLg={145}
+        topXl={105}
+      >
+        <TeamSection
+          sectionTitle="Experts Doctor"
+          sectionTitleUp="MEET OUR"
+          data={teamData}
+        />
+      </Section>
+      {/* End Team Section */}
       {/* Start Testimonial */}
       <Section
         topMd={185}
@@ -262,6 +335,7 @@ export default function Home() {
         bottomMd={200}
         bottomLg={150}
         bottomXl={110}
+        selectedSection={testimonialSection}
       >
         <TestimonialSection
           sectionTitle="Testimonials"
@@ -289,13 +363,13 @@ export default function Home() {
       </Section> */}
       {/* End Blog Section */}
       {/* Start Appointment Section */}
-      <Section topMd={190} topLg={145} topXl={105} id="appointment">
+      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
           imgUrl="/images/home_1/appointment.jpg"
         />
-      </Section>
+      </Section> */}
       {/* End Appointment Section */}
       {/* Start FAQ Section */}
       <Section topMd={190} topLg={145} topXl={105}>

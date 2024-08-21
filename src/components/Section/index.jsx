@@ -9,10 +9,11 @@ export default function Section({
   bottomLg = '_',
   bottomXl = '_',
   children,
+  selectedSection,
   ...props
 }) {
   return (
-    <section {...props}>
+    <section ref={selectedSection} {...props}>
       <Spacing md={topMd} lg={topLg} xl={topXl} />
       {children}
       <Spacing md={bottomMd} lg={bottomLg} xl={bottomXl} />

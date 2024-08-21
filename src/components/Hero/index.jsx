@@ -13,9 +13,10 @@ export default function Hero({
   infoList,
   btnText,
   btnUrl,
+  selectedSection,
 }) {
   return (
-    <section className="cs_hero cs_style_1">
+    <section ref={selectedSection} className="cs_hero cs_style_1">
       <div
         className="cs_hero_wrap cs_bg_filed"
         style={{ backgroundImage: `url(${bgUrl})` }}
@@ -28,9 +29,20 @@ export default function Hero({
             <p className="cs_hero_subtitle cs_fs_20 cs_heading_color"  style = {{
               "color": "#0984e3"
             }}>
-              {parse(subTitle)}
+              <div>
+                Exper program for : 
+              </div>
+              <div>Obesity</div>
+              <div>Diabetes</div>
+              <div>Hypertension</div>
+              <div>Dyslipidemia</div>
+              <div>Sleep Apnea</div>
+              <div>PCOS</div>
+              <div>Pre-Prediabetes</div>
+              <div>Prediabetes</div>
+              <div>Type 2 diabetes</div>
             </p>
-            <div className="cs_hero_info_col">
+            {/* <div className="cs_hero_info_col">
               <Link to={btnUrl} className="cs_btn cs_style_1">
                 <span>{btnText}</span>
                 <i>
@@ -38,7 +50,7 @@ export default function Hero({
                   <img src="/images/icons/arrow_white.svg" alt="Icon" />
                 </i>
               </Link>
-            </div>
+            </div> */}
           </div>
           <img src={imgUrl} alt="Hero" className="cs_hero_img" />
           <div className="cs_hero_info_wrap cs_shadow_1 cs_white_bg cs_radius_15">

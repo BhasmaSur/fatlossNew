@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import DropDown from './DropDown';
-import SocialWidget from '../Widget/SocialWidget';
-import Newsletter from '../Widget/Newsletter';
-import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
-import Spacing from '../Spacing';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import DropDown from "./DropDown";
+import SocialWidget from "../Widget/SocialWidget";
+import Newsletter from "../Widget/Newsletter";
+import IconBoxStyle11 from "../IconBox/IconBoxStyle11";
+import Spacing from "../Spacing";
 
-export default function Header({ logoSrc, variant }) {
+export default function Header({ scrollToSection, logoSrc, variant }) {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
   const [sideNav, setSideNav] = useState(false);
@@ -19,18 +19,18 @@ export default function Header({ logoSrc, variant }) {
         setIsSticky(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Cleanup function to remove the event listener
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <>
       <header
         className={`cs_site_header cs_style1 cs_sticky_header ${
-          mobileToggle ? 'cs_mobile_toggle_active' : ''
-        } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
+          mobileToggle ? "cs_mobile_toggle_active" : ""
+        } ${variant} ${isSticky ? "cs_active_sticky" : ""}`}
       >
         <div className="cs_main_header">
           <div className="container">
@@ -42,10 +42,15 @@ export default function Header({ logoSrc, variant }) {
                 <nav className="cs_nav">
                   <ul
                     className={`${
-                      mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
+                      mobileToggle ? "cs_nav_list cs_active" : "cs_nav_list"
                     }`}
                   >
-                    <li>
+                    <li
+                      onClick={() => {
+                        scrollToSection(1);
+                        setMobileToggle(!mobileToggle);
+                      }}
+                    >
                       <Link to="/">Home</Link>
                       {/* <DropDown>
                         <ul>
@@ -67,14 +72,29 @@ export default function Header({ logoSrc, variant }) {
                         </ul>
                       </DropDown> */}
                     </li>
-                    <li>
+                    <li
+                      onClick={() => {
+                        scrollToSection(2);
+                        setMobileToggle(!mobileToggle);
+                      }}
+                    >
                       <Link to="/">About</Link>
                     </li>
-                    <li>
-                      <Link to="/">Find Doctor</Link>
+                    <li
+                      onClick={() => {
+                        scrollToSection(3);
+                        setMobileToggle(!mobileToggle);
+                      }}
+                    >
+                      <Link to="/">Our Team</Link>
                     </li>
-                    <li>
-                      <Link to="/">Blog</Link>
+                    <li
+                      onClick={() => {
+                        scrollToSection(4);
+                        setMobileToggle(!mobileToggle);
+                      }}
+                    >
+                      <Link to="/">Testimonials</Link>
                     </li>
                     {/* <li className="menu-item-has-children">
                       <Link to="/">Pages</Link>
@@ -111,15 +131,20 @@ export default function Header({ logoSrc, variant }) {
                         </ul>
                       </DropDown>
                     </li> */}
-                    <li>
+                    <li
+                      onClick={() => {
+                        scrollToSection(5);
+                        setMobileToggle(!mobileToggle);
+                      }}
+                    >
                       <Link to="/">Contact</Link>
                     </li>
                   </ul>
                   <span
                     className={
                       mobileToggle
-                        ? 'cs_menu_toggle cs_teggle_active'
-                        : 'cs_menu_toggle'
+                        ? "cs_menu_toggle cs_teggle_active"
+                        : "cs_menu_toggle"
                     }
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
@@ -179,7 +204,7 @@ export default function Header({ logoSrc, variant }) {
           </div>
         </div>
       </header>
-      <div className={`cs_sidenav ${sideNav ? 'active' : ''}`}>
+      <div className={`cs_sidenav ${sideNav ? "active" : ""}`}>
         <div
           className="cs_sidenav_overlay"
           onClick={() => setSideNav(!sideNav)}
@@ -204,7 +229,7 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
             title="Phone"
-            subTitle="9898989898"
+            subTitle="9422334422"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
@@ -216,18 +241,18 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Location"
-            subTitle="XYZ block, Pune"
+            subTitle="S.No.46, Vartak Pride, D.P Road, Karvenagar, Pune 411004"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />
-          <Newsletter />
+          {/* <Newsletter /> */}
           <Spacing md="70" lg="50" xl="50" />
           <hr />
           <Spacing md="70" lg="50" xl="50" />
           <SocialWidget />
         </div>
       </div>
-      <div className={`cs_header_search ${searchToggle ? 'active' : ''}`}>
+      <div className={`cs_header_search ${searchToggle ? "active" : ""}`}>
         <div className="cs_header_search_in">
           <div className="container">
             <div className="cs_header_search_box">

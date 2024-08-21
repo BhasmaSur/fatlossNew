@@ -17,7 +17,7 @@ export default function AppointmentForm() {
         <input
           type="text"
           className="cs_form_field"
-          placeholder="9898989898"
+          placeholder="9422334422"
         />
         <div className="cs_height_42 cs_height_xl_25" />
       </div>

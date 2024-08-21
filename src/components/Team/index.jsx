@@ -22,7 +22,7 @@ export default function Team({
           </p>
           <p className="cs_member_description">{description}</p>
         </div>
-        <div>
+        {/* <div>
           <div className="cs_social_links">
             {social?.map((item, index) => (
               <Link to={item.href} key={index}>
@@ -30,7 +30,7 @@ export default function Team({
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

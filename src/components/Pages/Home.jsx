@@ -17,7 +17,7 @@ import TeamSection from "../Section/TeamSection";
 
 const teamData = [
   {
-    imgUrl: "images/image.png",
+    imgUrl: "images/doctor_1.png",
     name: "Dr. Suresh Shinde",
     designation: "Physician & Diabetologist",
     description:

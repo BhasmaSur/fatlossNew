@@ -30,17 +30,17 @@ export default function Hero({
               "color": "#0984e3"
             }}>
               <div>
-                Exper program for : 
+                Expert program for : 
               </div>
-              <div>Obesity</div>
-              <div>Diabetes</div>
-              <div>Hypertension</div>
-              <div>Dyslipidemia</div>
-              <div>Sleep Apnea</div>
-              <div>PCOS</div>
-              <div>Pre-Prediabetes</div>
-              <div>Prediabetes</div>
-              <div>Type 2 diabetes</div>
+              <div>1. Obesity</div>
+              <div>2. Diabetes</div>
+              <div>3. Hypertension</div>
+              <div>4. Dyslipidemia</div>
+              <div>5. Sleep Apnea</div>
+              <div>6. PCOS</div>
+              <div>7. Pre-Prediabetes</div>
+              <div>8. Prediabetes</div>
+              <div>9. Type 2 diabetes</div>
             </p>
             {/* <div className="cs_hero_info_col">
               <Link to={btnUrl} className="cs_btn cs_style_1">

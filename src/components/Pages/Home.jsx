@@ -21,7 +21,7 @@ const teamData = [
     name: "Dr. Suresh Shinde",
     designation: "Physician & Diabetologist",
     description:
-      "Over 45 Years of Clinical Medical Practice. Studied Glucose and Insulin Kinetics in over 2500 patients. Visionary Founder of Aloha’s Intensive Reversal Program. Awards for Diabetes Research in National and International Conferences",
+      "Over 45 Years of Clinical Medical Practice. Studied Glucose and Insulin Kinetics in over 2500 patients. Visionary Founder of Scientific Reversal Program. Awards for Diabetes Research in National and International Conferences",
     social: [
       { icon: "fa6-brands:facebook-f", href: "/about" },
       { icon: "fa6-brands:linkedin-in", href: "/about" },
@@ -241,7 +241,7 @@ export default function Home({
         title="SCIENTIFIC REVERSAL PROGRAM"
         subTitle="Expert Programs for Obesity, Diabetes, Hypertension, Dyslipidemia, Sleep Apnea, PCOS, Pre-Prediabetes, Prediabetes, Type 2 diabetes"
         bgUrl="/images/home_1/hero_bg.jpeg"
-        imgUrl="/images/home_1/hero_img.png"
+        imgUrl="/images/home_1/hero_bg_1.jpeg"
         videoBtnText="See how we work"
         videoUrl="https://youtube.com/embed/1EyazelYoWw?si=bxcZbLzGm6K5gvqt"
         infoList={[
@@ -277,7 +277,7 @@ export default function Home({
             {
               featureListTitle: "Why should you enroll in the program?",
               featureListSubTitle:
-                "In the diverse fabric of Indian life, the Aloha Intensive Reversal Program blends tradition with health wisdom, ensuring present well-being and making an invaluable investment in lasting health that your future self will truly appreciate",
+                "In the diverse fabric of Indian life, the Scientific Reversal Program blends tradition with health wisdom, ensuring present well-being and making an invaluable investment in lasting health that your future self will truly appreciate",
             },
           ]}
         />
@@ -339,7 +339,7 @@ export default function Home({
       >
         <TestimonialSection
           sectionTitle="Testimonials"
-          sectionTitleDown="What Our Clients Say"
+          sectionTitleDown="What Our Patients Say"
         />
       </Section>
       {/* End Testimonial */}

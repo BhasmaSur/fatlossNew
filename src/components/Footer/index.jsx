@@ -51,7 +51,7 @@ export default function Footer({
           <div className="row">
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <TextWidget text="Medical & <br />Healthcare Center" />
+                <TextWidget text="Scientific <br />Reversal Program" />
                 <ContactInfoWidget />
               </div>
             </div>

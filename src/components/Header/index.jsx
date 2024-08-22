@@ -235,7 +235,7 @@ export default function Header({ scrollToSection, logoSrc, variant }) {
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Email"
-            subTitle="contactmail@gmail.com"
+            subTitle="scientificreversalprogram@gmail.com"
             iconSrc="/images/contact/icon_2.svg"
           />
           <Spacing md="30" lg="30" xl="30" />

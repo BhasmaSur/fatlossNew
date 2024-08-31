@@ -41,11 +41,11 @@ const teamData = [
     ],
   },
   {
-    imgUrl: "images/doctor_3.png",
-    name: "Dr. Kartiki Gole",
-    designation: "Dietician & Nutrition Consultant",
+    imgUrl: "images/doctor_4.png",
+    name: "Dr. Suchitra Bhangale",
+    designation: "Senior Clinical Researcher",
     description:
-      "BSc in Home Science, MSc in Nutritional Science and Diebetes. Specialized in crafting personalised nutrition plans. Dedicated to promoting healthy lifestyle choices.",
+      "Senior Clinical Researcher with 22 Clinical Trials Experience. Certified from John's Hopkins University, Expert in Protocol Designing. Proficient in Computer Data Management, NABH and Clinical Research Audits Specialist",
     social: [
       { icon: "fa6-brands:facebook-f", href: "/about" },
       { icon: "fa6-brands:linkedin-in", href: "/about" },
@@ -53,11 +53,11 @@ const teamData = [
     ],
   },
   {
-    imgUrl: "images/doctor_4.png",
-    name: "Dr. Suchitra Bhangale",
-    designation: "Senior Clinical Researcher",
+    imgUrl: "images/doctor_3.png",
+    name: "Dr. Kartiki Gole",
+    designation: "Dietician & Nutrition Consultant",
     description:
-      "Senior Clinical Researcher with 22 Clinical Trials Experience. Certified from John's Hopkins University, Expert in Protocol Designing. Proficient in Computer Data Management, NABH and Clinical Research Audits Specialist",
+      "BSc in Home Science, MSc in Nutritional Science and Diebetes. Specialized in crafting personalised nutrition plans. Dedicated to promoting healthy lifestyle choices.",
     social: [
       { icon: "fa6-brands:facebook-f", href: "/about" },
       { icon: "fa6-brands:linkedin-in", href: "/about" },
@@ -269,18 +269,18 @@ export default function Home({
       {/* Start About Section */}
       <Section selectedSection={aboutSection}>
         <AboutSection
-          imgUrl="/images/home_1/about.jpg"
-          spiningImgUrl="/images/home_1/about_mini.svg"
-          title="About Us"
-          subTitle="SCIENTIFIC REVERSAL PROGRAM"
-          featureList={[
-            {
-              featureListTitle: "Why should you enroll in the program?",
-              featureListSubTitle:
-                "In the diverse fabric of Indian life, the Scientific Reversal Program blends tradition with health wisdom, ensuring present well-being and making an invaluable investment in lasting health that your future self will truly appreciate",
-            },
-          ]}
-        />
+         imgUrl="/images/home_1/about.jpg"
+         spiningImgUrl="/images/home_1/about_mini.svg"
+         title="About Us"
+         subTitle="SCIENTIFIC REVERSAL PROGRAM"
+         featureList={[
+           {
+             featureListTitle: "Why should you enroll in the program?",
+             featureListSubTitle:
+               "In the diverse fabric of Indian life, the Scientific Reversal Program blends tradition with health wisdom, ensuring present well-being and making an invaluable investment in lasting health that your future self will truly appreciate",
+           },
+         ]}
+         />
       </Section>
       {/* End About Section */}
       {/* Start Departments Section */}

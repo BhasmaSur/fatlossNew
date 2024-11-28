@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;                    /* Enable CSS Grid Layout */
+    grid-template-columns: 1fr 1fr;    /* Define two equal columns */
+    gap: 20px;                         /* Add space between the items */
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+  }

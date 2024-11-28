@@ -87,8 +87,8 @@ export default function DepartmentCarousel({ data }) {
               className="cs_department cs_shadow_1 cs_radius_20 cs_white_bg"
             >
               <>
-                {/* <img src={item.iconUrl} alt="Icon" /> */}
-                <p className="cs_department_title cs_medium cs_heading_color cs_fs_20 mb-0">
+                <img src={item.iconSrc} alt="Icon" width={100}/>
+                <p className="cs_department_title cs_medium cs_heading_color mb-0">
                   {item.title}
                 </p>
               </>

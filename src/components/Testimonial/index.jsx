@@ -1,18 +1,41 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Rating from "../Rating";
+import VideoModal from "../VideoModal";
 
 export default function Testimonial() {
   const [activeTab, setActiveTab] = useState(2);
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
+
+  const videoSrc = useMemo(() => {
+    switch (activeTab) {
+      case 1:
+        return "./videos/kewadiya.mp4";
+      case 2:
+        return "./videos/patil.mp4";
+      case 3:
+        return "./videos/chopra.mp4";
+    }
+  }, [activeTab]);
+
+  const imgSrc = useMemo(() => {
+    switch (activeTab) {
+      case 1:
+        return "./images/kewadiya.png";
+      case 2:
+        return "./images/patil.png";
+      case 3:
+        return "./images/chopra.png";
+    }
+  }, [activeTab]);
   return (
     <div className="cs_tabs cs_style1">
       <ul className="cs_tab_links">
         <li className={activeTab === 1 ? "active" : ""}>
           <div className="cs_tab_link_in" onClick={() => handleTabClick(1)}>
             <div className="cs_testimonial_1_avatar">
-              <img src="/images/home_1/avatar_1.png" alt="Avatar" />
+              <img src="./images/kewadiya.png" alt="Avatar" />
               <div className="cs_testimonial_1_avatar_right">
                 <h3 className="cs_fs_24 cs_semibold mb-0">Trushal Kawadiya</h3>
                 <p className="cs_heading_color mb-0">Pune, IN</p>
@@ -23,7 +46,7 @@ export default function Testimonial() {
         <li className={activeTab === 2 ? "active" : ""}>
           <div className="cs_tab_link_in" onClick={() => handleTabClick(2)}>
             <div className="cs_testimonial_1_avatar">
-              <img src="/images/home_1/avatar_2.png" alt="Avatar" />
+              <img src="./images/patil.png" alt="Avatar" />
               <div className="cs_testimonial_1_avatar_right">
                 <h3 className="cs_fs_24 cs_semibold mb-0">Prabash Patil</h3>
                 <p className="cs_heading_color mb-0">Pune, IN</p>
@@ -34,7 +57,7 @@ export default function Testimonial() {
         <li className={activeTab === 3 ? "active" : ""}>
           <div className="cs_tab_link_in" onClick={() => handleTabClick(3)}>
             <div className="cs_testimonial_1_avatar">
-              <img src="/images/home_1/avatar_3.png" alt="Avatar" />
+              <img src="./images/chopra.png" alt="Avatar" />
               <div className="cs_testimonial_1_avatar_right">
                 <h3 className="cs_fs_24 cs_semibold mb-0">Ujwala Chopra</h3>
                 <p className="cs_heading_color mb-0">Pune, IN</p>
@@ -52,6 +75,14 @@ export default function Testimonial() {
               remarkable 11 kg weight loss in 2 months, I feel energetic now.
             </p>
             <Rating ratingNumber={5} />
+            <br />
+            <VideoModal
+              videoUrl={
+                videoSrc
+              }
+              videoBtnText={"video"}
+              variant="cs_gray_bg_1"
+            />
           </div>
         )}
         {activeTab === 2 && (
@@ -63,6 +94,14 @@ export default function Testimonial() {
               recieved training and guidance.
             </p>
             <Rating ratingNumber={5} />
+            <br />
+            <VideoModal
+              videoUrl={
+                videoSrc
+              }
+              videoBtnText={"video"}
+              variant="cs_gray_bg_1"
+            />
           </div>
         )}
         {activeTab === 3 && (
@@ -75,6 +114,12 @@ export default function Testimonial() {
               pain almost gone.
             </p>
             <Rating ratingNumber={5} />
+            <br />
+            <VideoModal
+              videoUrl={videoSrc}
+              videoBtnText={"video"}
+              variant="cs_gray_bg_1"
+            />
           </div>
         )}
       </div>

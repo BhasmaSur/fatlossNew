@@ -14,6 +14,8 @@ import DepartmentSection from "../Section/DepartmentSection";
 import { pageTitle } from "../../helpers/PageTitle";
 import Team from "../Team";
 import TeamSection from "../Section/TeamSection";
+import AboutExtendedSection from "../Section/AboutExtendedSection";
+import ProgramWorkSection from "../Section/ProgramWorkSection";
 
 const teamData = [
   {
@@ -100,36 +102,36 @@ const featureListData = [
 
 const departmentData = [
   {
-    iconSrc: "/images/home_1/compassion.svg",
+    iconSrc: "./images/b1.png",
     title: "Scientifically designed, intensive 14-day program",
   },
   {
-    iconSrc: "/images/home_1/excellence.svg",
+    iconSrc: "./images/b3.png",
     title: "Based on Dr. Roy Taylor's direct trials",
   },
   {
-    iconSrc: "/images/home_1/integrity.svg",
+    iconSrc: "./images/b5.png",
     title: `Pre & post Complete Metabolic Profile Check`,
   },
   {
-    iconSrc: "/images/home_1/respect.svg",
+    iconSrc: "./images/b7.png",
     title: "Insulin & Leptin Resistance Assessment",
   },
   {
-    iconSrc: "/images/home_1/teamwork.svg",
+    iconSrc: "./images/b2.png",
     title:
       "DXA Full Body Composition Scan for Fat Muscle and Bone Density Assessment",
   },
   {
-    iconSrc: "/images/home_1/teamwork.svg",
+    iconSrc: "./images/b4.png",
     title: "Continuous Glucose monitoring with a wireless device",
   },
   {
-    iconSrc: "/images/home_1/teamwork.svg",
+    iconSrc: "./images/b6.png",
     title: "Blood Ketone monitoring for Fat-burning Analysis",
   },
   {
-    iconSrc: "/images/home_1/teamwork.svg",
+    iconSrc: "./images/b8.png",
     title:
       "24/7 real-time & non-invasive sugar monitoring for both Doctors and Patient",
   },
@@ -267,6 +269,9 @@ export default function Home({
       />
 
       {/* Start About Section */}
+      <br/>
+      <br/>
+      <br/>
       <Section selectedSection={aboutSection}>
         <AboutSection
          imgUrl="/images/home_1/about.jpg"
@@ -281,6 +286,21 @@ export default function Home({
            },
          ]}
          />
+      </Section>
+      <Section selectedSection={aboutSection}>
+        <AboutExtendedSection
+        imgUrl="/images/home_1/about.jpg"
+        spiningImgUrl="/images/home_1/about_mini.svg"
+        title="About Us"
+        subTitle="SCIENTIFIC REVERSAL PROGRAM"
+        featureList={[
+          {
+            featureListTitle: "Why should you enroll in the program?",
+            featureListSubTitle:
+              "In the diverse fabric of Indian life, the Scientific Reversal Program blends tradition with health wisdom, ensuring present well-being and making an invaluable investment in lasting health that your future self will truly appreciate",
+          },
+        ]}
+        />
       </Section>
       {/* End About Section */}
       {/* Start Departments Section */}
@@ -308,11 +328,26 @@ export default function Home({
         bottomXl={100}
       >
         <FeaturesSection
-          sectionTitle="What are the additional benefits?"
+          sectionTitle="Who is the program designed for?"
           data={featureListData}
         />
       </Section>
       {/* End Feature Section */}
+      {/* Start Program Work Section */}
+      <Section
+        topMd={185}
+        topLg={140}
+        topXl={100}
+        bottomMd={185}
+        bottomLg={140}
+        bottomXl={100}
+      >
+        <ProgramWorkSection
+          sectionTitle="How does the program work?"
+          data={featureListData}
+        />
+      </Section>
+      {/* End Program Work Section */}
       {/* Start Team Section */}
       <Section
         selectedSection={teamSection}
